@@ -1,97 +1,209 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//pt-BR">
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+<meta charset="UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport"content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+
+<title>Login</title>
+
 </head>
+
 <body>
-<form>
-<img src="1.jpeg" width="100%"height="130px">
 
+<div id="login">
 
+<form class="card">
 
-<br>
-<p>LOGIN de ACESSO</p>
-<br><br>
+<div class="card-header">
 
-</select>
-<form action="http://formmail.kinghost.net/formmail.cgi" method="POST">  </o>
+<h2>Login</h2>
 
-LOGIN <input class="nome"type="text" size="18" name="NOME"required placeholder="Nome">
-  
-  
- <br><br>
-SENHA <input class="nome"type="password" size="18" name="NOME"required placeholder="SENHA">
-  <br><br> <br><br>
-  <a href="https://lojasc.github.io/Loja/">
- <input class="btn"type="submit" name="" value="ENVIAR" select="button alt" onclick="funcao1()" value="Exibir Alert">
-  </a>
+</div>
 
- 
+<div class="card-content">
 
+<div class="card-content-area">
 
-<br><br>
-<a class="sen"href="#">ESQUECI A <f>SENHA</a>
-<a class="logi"href="cadastro.html">CRIAR LOGIN</a>
-<p></p>
+<label for="usuario">Usuário</label>
+
+<input type="text" id="usuario" autocomplete="off">
+
+</div>
+
+<div class="card-content-area">
+
+<label for="password">Senha</label>
+
+<input type="password" id="password" autocomplete="off">
+
+</div>
+
+</div>
+
+<div class="card-footer">
+<a href="https://lojasc.github.io/Loja/">
+<input type="submit" value="login" class="submit"></a>
+
+<a href="#" class="recuperar_senha">Esqueceu a senha?</a>
+
+</div>
+
 </form>
 
+</div>
 
 </body>
+
 </html>
+
+
 <style>
 body {
-    background:orange;
-    */width:100%;
-    */height:100%;
+
+padding: 0;
+
+margin: 0;
+
+background-color: #454d6b;
+
 }
 
-p {
-    background:red;
-    margin-left:px;
-    text-align:center;
-    height:50px;
+#login {
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+height: 100vh;
+
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
-h {
-    margin-left:30%;
+
+.card {
+
+background-color: rgba(19, 19, 19, 0.3);
+
+padding: 40px;
+
+border-radius: 2px;
+
+width:280px;
+
 }
-input {
-    heigth: 
+
+.card-header {
+
+padding-bottom: 50px;
+
+opacity: 0.8;
+
+color: #fff;
+
 }
-o {
-    color:blue;
-    margin-left:30px;
+
+.card-header::after {
+
+content: "";
+
+width: 70px;
+
+height: 1px;
+
+background-color: #fff;
+
+display: block;
+
+margin-top: -17px;
+
+margin-left: -5px;
+
 }
-.btn {
-    width:60%; 
-    margin-left:15%;
-    background:red;
-    height:40px;
-    border-radius:40%;
-    border: none;
+
+.card-content label {
+
+color: #fff;
+
+font-size: 12px;
+
+opacity: 0.8;
+
 }
-.sen {
-    margin-left:20px;
-    
+
+.card-content-area {
+
+display: flex;
+
+flex-direction: column;
+
+padding:10px 0;
+
 }
-.logi {
-    margin-left:50px;
-    heigth:40px;
+
+.card-content-area input {
+
+margin-top: 10px;
+
+padding:0 5px;
+
+background-color: transparent;
+
+border:none;
+
+border-bottom: 1px solid #e1e1e1;
+
+outline: none;
+
+color: #fff;
+
 }
-.nome {
-    border-radius:20%;
-    text-align:center;
-    height:24px;
-    width:70%;
+
+.card-footer {
+
+display: flex;
+
+flex-direction: column;
+
 }
+
+.card-footer .submit{
+
+width: 100%;
+
+height: 40px;
+
+background-color: #a13854;
+
+border:none;
+
+color:#e1e1e1;
+
+margin: 10px 0;
+
+}
+
+.card-footer a {
+
+text-align: center;
+
+font-size: 12px;
+
+opacity: 0.8;
+
+color: #fff;
+
+text-decoration: none;
+
+}
+
 </style>
-<script>
- alert("SEJA BEM-VINDO!!!");
-</script>
- <script> 	function mostraResultado() { 	var numero1 = 2.50;
- 	 var numero2 = 2.50; 
- 	 var resultado = numero1 + numero2; 	document.getElementById('resultado')
- 	 .innerHTML = resultado;};
- </script> 
- 
-
-
