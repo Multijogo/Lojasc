@@ -1,217 +1,165 @@
-<!DOCTYPE html>
-
-<html lang="pt-br">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//pt-BR">
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
-<meta charset="UTF-8">
+<script type="text/javascript">
+ var senha='2112';
+ 
+ function login()
+ 
+ 
+{ var tentativa = document.getElementById("password").value; 
 
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<meta name="viewport"content="width=device-width, initial-scale=1.0">
+if (tentativa == senha) 
+alert("Senha correta, entrando no sistema...");
 
-<link rel="stylesheet" href="style.css">
 
-<title>Login</title>
- <script type="text/javascript"> var senha='2112'; function login(){ var tentativa = document.getElementById("password").value; if (tentativa == senha) alert("Senha correta, entrando no sistema..."); else alert("Senha incorreta, tente novamente"); } </script> </head>
+
+ else alert("Senha incorreta, tente novamente");
+  } 
+ </script> 
+
 </head>
-
 <body>
-
-<div id="login">
-
-<form class="card">
-
-<div class="card-header">
-<img src="21.jpeg" width="100%"height="70px">
-
-
-<h2>Login</h2>
-
-</div>
-
-<div class="card-content">
-
-<div class="card-content-area">
-
-<label for="usuario">Usuário</label>
-
-<input type="text" id="usuario" autocomplete="off" required>
-
-</div>
-
-<div class="card-content-area">
-
-<label for="password">Senha</label>
-
-<input type="password" id="password" autocomplete="off" required>
+<form>
+<img src="1.jpeg" width="100%"height="130px">
 
 
 
-</div>
-
-<div class="card-footer">
-<a href="https://lojasc.github.io/Loja/">
-<input type="submit" value="login" class="submit" onclick="login ()"></a></div>
-
-<a href="https://api.whatsapp.com/send?phone=5571992290058&text=QUERO%20MINHA%20SENHA%20DO%20APP%0A%0A%0A %20CR-INVESTIMENT%20"
- class="recuperar_senha">Esqueceu a senha?</a>
+<br>
+<p>LOGIN de ACESSO</p>
+<br><br>
 
 
+</select>
+<form action="http://formmail.kinghost.net/formmail.cgi" method="POST">  
+ <input type="hidden" name="recipient" value="multijogo1980@gmail.com">  
+ 
+ 
+
+LOGIN <input class="nome"type="text" size="18" name="NOME"required placeholder="Nome"><br>
+<br>
+ <h>SENHA<input class="nom"type="password" id="password" size="18" name="SENHA"value=""required placeholder="SENHA">
+  
+ <br><br>
+
+ 
+ 
+ 
+ <button onclick="mostra1()" id="minhaDiv" style="display:none"class="btn"type="submit" name="" value="ENVIAR A PULE" select="button alt"<string onclick="window.location.href = 'http://pt.stackoverflow.com'">Conteudo</button>
+
+
+ <button type="button"onclick="mostra('minhaDiv')">Mostrar / Esconder</button>
+
+
+
+
+
+
+
+
+<br>
+  <input type="hidden" name="subject" value="Assunto"> 
+ <input type="hidden" name="email" value="gmail.com">
 
 </form>
 
-</div>
-
-</body>
-
-</html>
-
-
+<br><br>
+<a class="sen"href="#">ESQUECI A <f>SENHA</a>
+<a class="logi"href="cadastro.html">CRIAR LOGIN</a>
+<p></p>
+</form>
 <style>
 body {
-
-padding: 0;
-
-margin: 0;
-
-background-color: #454d6b;
-
+    background:orange;
+ 
 }
 
-#login {
-
-display: flex;
-
-align-items: center;
-
-justify-content: center;
-
-height: 100vh;
-
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
+p {
+    background:red;
+    margin-left:px;
+    text-align:center;
+    height:50px;
 }
-
-.card {
-
-background-color: rgba(19, 19, 19, 0.3);
-
-padding: 40px;
-
-border-radius: 2px;
-
-width:280px;
-
+h {
+    margin-left:10%;
 }
-
-.card-header {
-
-padding-bottom: 50px;
-
-opacity: 0.8;
-
-color: #fff;
-
+input {
+    heigth: 
 }
-
-.card-header::after {
-
-content: "";
-
-width: 70px;
-
-height: 1px;
-
-background-color: #fff;
-
-display: block;
-
-margin-top: -17px;
-
-margin-left: -5px;
-
+o {
+    color:blue;
+    margin-left:30px;
 }
-
-.card-content label {
-
-color: #fff;
-
-font-size: 12px;
-
-opacity: 0.8;
-
+.btn {
+    width:60%; 
+    margin-left:20%;
+    background:red;
+    height:40px;
+    border-radius:40%;
+    border: none;
 }
-
-.card-content-area {
-
-display: flex;
-
-flex-direction: column;
-
-padding:10px 0;
-
+.sen {
+    margin-left:20px;
+    
 }
-
-.card-content-area input {
-
-margin-top: 10px;
-
-padding:0 5px;
-
-background-color: transparent;
-
-border:none;
-
-border-bottom: 1px solid #e1e1e1;
-
-outline: none;
-
-color: #fff;
-
+.logi {
+    margin-left:50px;
+    heigth:40px;
 }
-
-.card-footer {
-
-display: flex;
-
-flex-direction: column;
-
+.nome {
+    border-radius:20%;
+    text-align:center;
+    height:24px;
+    width:70%;
+    
 }
-
-.card-footer .submit{
-
-width: 100%;
-
-height: 40px;
-
-background-color: #a13854;
-
-border:none;
-
-color:#e1e1e1;
-
-margin: 10px 0;
-
+a {
+       text-align:center;
+       widht:100%;
+       heigth:30%;
 }
-
-.card-footer a {
-
-text-align: center;
-
-font-size: 12px;
-
-opacity: 0.8;
-
-color: #fff;
-
-text-decoration: none;
-
-}
-.recuperar_senha{
-    margin-left:80px;
+.nom {
+    
+    border-radius:20%;
+    text-align:center;
+    height:24px;
+    width:70%;
 }
 </style>
+<script>
+ alert("SEJA BEM-VINDO!!!");
+</script>
 
+
+
+ <script> 	
+ var senha ='1234'
+ 
+ function mostra1() { 	
+ var carlos = document.getElementById ("password").value;
+ 	 
+ 	 
+ 	 if(carlos==senha){ alert("http://pt.stackoverflow.com");  window.location.href = " 'http://pt.stackoverflow.com'"; }
+ 	  else alert ("senha incorreta");}
+ </script> 
+ 
+ 
+ 
+ 
+ <script >
+function mostra(el) { var display = document.getElementById(el).style.display; if (display == "none") document.getElementById(el).style.display = 'block'; else document.getElementById(el).style.display = 'none'; }
+</script>
 
  
+<script>
+const usuarios = [ {user: "teste", pass: "teste"}, {user: "exemplo", pass: "example"}, ] function ogin() { var done=0; var usuario = document.getElementsByName('usuario')[0].value; usuario=usuario.toLowerCase(); var senha= document.getElementsByName('senha')[0].value; senha=senha.toLowerCase(); if (usuario=="teste" && senha=="teste") { alert("Ok!"); window.location.href = "/loginok.html"; done=1; } if (done==0) { alert("Dados incorretos, tente novamente");
+ } } 
+</scipt>
+
+
+</body>
+</html>
+
